@@ -1,0 +1,443 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+    scroll-behavior: smooth;
+    font-weight: bold;
+    color: black;
+}
+      /*  Editinig nav */
+  .nav {
+    overflow: hidden;
+    font-weight: bold;
+  }
+      /* nav-logo */
+  .nav .logo{
+      font-size: 29px;
+      float: left;
+  } 
+      /*  Nav a-link */
+  .nav a {
+    padding: 15px;  
+    text-decoration: none;
+    font-size: 17px; 
+    float: right;
+    display: block;
+    color: black;
+    text-align: center; 
+    margin-top: 3px;
+    margin: 5px 9px 0 9px;
+  }
+    
+
+      /* hover color */
+  .nav a:hover {
+    background-color: rgba(0,0,0,0.1);
+    color: black;
+    border-radius: 9px;
+    transition: 0.7s;
+  }
+  
+  /* current page */
+  .nav a.active {
+    color: black;
+    border-radius: 9px;
+  }
+  
+  /* hide fa-bars from display */
+  .nav .icon {
+    display: none;
+  }
+
+  @media screen and (max-width: 600px) {
+    .nav a:not(:first-child) {display: none;}
+    .nav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .nav.responsive {position: relative;}
+    .nav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .nav.responsive a {
+      float: none;
+      display: block;
+      text-align: center;
+    }
+  }
+        /*  Here start Conatiner- body content */
+  .container{
+    padding-top: 20px;
+  }
+        /* All Section start here*/
+  section{
+    height: 102vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px 0 20px 0;
+  }
+        /*  Container first section part .inside*/
+  .container .inside{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 34%;
+    float: center;
+    text-align: center;
+  }
+        /*  inside Container edit Image with .center class */
+  .container .center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    max-width: 34vw;
+    border-radius: 9%;
+  }
+        /* div .port h1 and p*/
+  .container .port{
+      margin-top: 20px; 
+  }
+        /*  edit h1 iniside .port*/
+  .container .port h1{
+    font-size: 32px;
+  }  
+        /* paragraph inside .port*/
+  .container .port p{
+    margin-top: 10px;
+    font-size: 24px;
+  }
+        /* button inside .port*/
+  .container .port button{
+    margin-top: 10px;
+    border-radius: 9px;
+    padding: 12px;
+    font-weight: bold; 
+    cursor: pointer; 
+    border: 0;
+  }
+        /* "a" inside Button style*/
+  .container .port  a{
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+        /* When button :hover*/
+  .container .port button:hover{
+    background-color: rgba(0,0,0,0.1);
+  }
+        /* education section elements*/     
+  .education{
+    align-items: center;
+    display: flex;
+  }
+        /* education section div*/
+  .container .education .column-2a {
+    color: black;
+    width: 100%;
+    padding: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 34px;
+    margin:30px;
+    margin-right:30px;
+    margin-bottom: 40px;
+    text-align: center;
+    border-radius: 22px;
+  }
+        /* education section h2 inside div*/
+  .container .education .column-2a h2{
+    margin: 20px 0 26px 0;
+    text-align: center;
+    font-size: 29px;
+  }
+        /* education table style*/
+  .container .education .column-2a table{
+    display: flex;
+    align-items: center;
+  }
+        /* education table style tr*/
+  .container .education .column-2a table tr{
+    margin-left: 90px;
+  }
+        /* education table TD inside tr*/
+  .container .education .column-2a table tr td{
+    margin: 0 2px 0 2px;
+    padding: 5px 0 5px 0;
+    font-size: 22px;
+    width: 790px;
+   }     
+        /* Start Skill section, first Div*/
+  .prog{
+    position: relative;
+    width: 77%;
+    background: #fff; 
+    margin: 0 15px;
+    padding: 10px 20px;
+    border-radius: 7px;
+    height: 51%;
+  }           
+        /* h1 inside Div*/
+  .prog h1{
+    text-align: center;
+    font-size: 32px;
+  }
+        /* all skill boxes*/
+  .skill-box{
+    width: 100%;
+    margin: 25px 0;
+  }
+        /* skill box SPAN title*/
+  .skill-box .title{
+    display: block;
+    font-size: 17px;
+    font-weight: 600;
+    color: #333;
+    background-color: white;
+  }
+        /* skill box DIV for skill bar*/
+  .skill-box .skill-bar{
+    height: 13px;
+    width: 100%;
+    border-radius: 6px;
+    background: rgba(0,0,0,0.1);
+  }
+        /* skill boxes skill bar per each!*/
+  .skill-bar .skill-per{
+    position: relative;
+    display: block;
+    height: 100%;
+    width: 90%;
+    border-radius: 6px;
+    background: #C9CACE;
+    animation: progress 0.4s ease-in-out forwards;
+    opacity: 0;
+  }
+        /* style for skill bar HTML*/
+  .skill-per.html{
+    width: 89;
+    animation-delay: 0.1s;
+  }
+        /* style for skill bar CSS*/
+  .skill-per.css{
+    width: 89;
+    animation-delay: 0.1s;
+  }
+        /* style for skill bar JS*/
+  .skill-per.javascript{
+    width: 30%;
+    animation-delay: 0.2s;
+  }
+        /* style for skill bar bootstrap*/
+  .skill-per.bootstrap{
+    width: 79%;
+    animation-delay: 0.3s;
+  }
+        /* style for skill bar java*/
+  .skill-per.java{
+    width: 42%;
+    animation-delay: 0.3s;
+  }
+        /* style for skill bar PHP*/
+  .skill-per.php{
+    width: 68%;
+    animation-delay: 0.3s;
+  }
+        /* progress opacity bar*/
+  @keyframes progress {
+    0%{
+       width: 0;
+       opacity: 1;
+    }
+    100%{
+       opacity: 1;
+    }
+  }
+        /* skill tooltip percentage % per each*/
+  .skill-per .tooltip{
+    position: absolute;
+    right: -14px;
+    top: -28px;
+    font-size: 12px;
+    font-weight: 500;
+    color: black;
+    font-weight: bold;
+    padding: 2px 6px;
+    border-radius: 3px;
+    background: #C9CACE;
+    z-index: 1;
+  }
+        /* style skill bar before start moving on right*/
+  .tooltip::before{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 10px;
+    width: 10px;
+    z-index: -1;
+    background-color: #C9CACE;
+    transform: translateX(-50%) rotate(45deg);
+  }   
+        /* Contact form, style contact form font and size.*/
+    #contact input[type="text"],
+    #contact input[type="email"],
+    #contact input[type="tel"],
+    #contact input[type="url"],
+    #contact textarea,
+    #contact button[type="submit"] {
+      font: 400 12px/16px 'Roboto Mono', monospace;
+  }
+       /* Contact form*/
+  #contact {
+    padding: 25px;
+    margin: 150px 0;
+    width: 77%;
+    font-weight: bold;
+    text-align: center;
+  }
+       /* Contact form h3*/
+  #contact h3 {
+    display: block;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+       /* Contact form h4*/
+  #contact h4 {
+    margin: 5px 0 15px;
+    display: block;
+    font-size: 13px;
+    font-weight: 400;
+  }
+       /* Contact form fieldsets*/
+  fieldset {
+    border: medium none !important;
+    margin: 0 -12px 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+  }
+       /* all input fields inside contact form Style*/
+  #contact input[type="text"],
+  #contact input[type="email"],
+  #contact input[type="tel"],
+  #contact input[type="url"],
+  #contact textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    border-radius: 5px;
+  }
+       /* all input fields whenn :Hover*/
+  #contact input[type="text"]:hover,
+  #contact input[type="email"]:hover,
+  #contact input[type="tel"]:hover,
+  #contact input[type="url"]:hover,
+  #contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+  }
+       /* input fields text area*/ 
+  #contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+  }
+       /* contact form input button submit*/ 
+  #contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background: #aba9a9;
+    color: #FFF;
+    margin: 0 8px 5px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+  }
+       /* contact form input button when :hover*/
+  #contact button[type="submit"]:hover {
+    background: #8d908d;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+  }
+       /* */
+  #contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+  }
+       /* Contact form input focus*/
+  #contact input:focus,
+  #contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+  }
+       /* Contact form placeholder color*/
+  ::-webkit-input-placeholder {
+    color: #888;
+  } 
+  :-moz-placeholder {
+    color: #888;
+  } 
+  ::-moz-placeholder {
+    color: #888;
+  }
+  :-ms-input-placeholder {
+    color: #888;
+  }
+       /* Contact form fieldset Social Media style*/
+  .social{
+    /* background: gray; */
+    margin-left: px;
+    height: 33px;
+    padding-top: 12px;
+  }
+       /* Contact form social a*/
+  .social a{
+    text-decoration: none;
+    list-style-type: none;
+  }
+       /* Contact form i inside a*/
+  .social a i{
+    display: inline;
+    font-size: 22px;
+    size: 20px;
+    padding: 15px;
+  }
+      /* Contact form color for Instagram*/
+  .social .insta i{
+    color: #c32aa3;
+  }
+       /* Contact form color for FaceBook*/
+  .social .fb i{
+    color: #1877f2;
+  }
+       /* Contact form color for LinkeDin*/
+  .social .linkedin i{
+    color: #0a66c2;
+  }
+       /* Contact form color for GitHub*/
+  .social .git i{
+    color: black;
+  }
+       /* Contact form color for Email*/
+  .social .email i{
+    color: #ff0000;
+  }
+       /* Contact form color for Phone Call*/
+  .social .phone i{
+    color: #4DA701;
+  }
+    

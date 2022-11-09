@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Portfolio</title>
+        <!-- Connect with Style.css filePath-->
+    <link rel="stylesheet" href="Style/style.css">
+        <!-- Connect with font awesome for icons-->
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+        <!-- Connect with google font exactly Robot Mono-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <!-- Connect with Font awesome kit Script-->
+    <script src="https://kit.fontawesome.com/baec246d69.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <!-- Nav -->
+    <div class="nav" id="topnav">
+        <a href="#first" class="logo">E/S</a> 
+        <a href="#contact-me">Contact</a>
+        <a href="#skill">Skill</a>
+        <a href="#education">Education</a>
+        <a href="#first" class="active">Home</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i> </a>
+    </div>
+    <!-- Content Container -->
+    <div class="container">   
+        <!-- All Section starting with first -->
+        <section class="first">
+            <div class="inside"> 
+                <img src="Images/Me/me.jpg" alt="" class="center">
+                <div class="port">   
+                    <h1>Hi, I'm Eduard Sadriu</h1>
+                    <p>This is my Porfolio</p>
+                    <a href="#social"><button>Follow Me</button></a>
+                </div>
+            </div>
+        </section>
+                <!-- Second Section Education -->
+        <section class="education" id="education">
+            <div class="column-2a">
+                 <hr>
+                <h2>Education</h2>
+                <table class="table-style">
+                    <tr>
+                        <td>Digital School</td>
+                        <td>2019 - Present </td>
+                        <td class="td-img-ubt"><img src="Images/Eduacation-Img/ds.webp" alt="Digital-School"></td>  
+                     </tr>                                
+                     <tr>
+                        <td>UBT-University</td>
+                        <td>2020 - Present </td>
+                        <td class="td-img-ubt"><img src="Images/Eduacation-Img/ubt.png" alt="Kolegji-UBT"></td>
+                     </tr>
+                </table>
+            </div>
+        </section>
+                <!-- Third Section Skill-->
+        <section class="skill" id="skill">
+            <div class="prog">
+                    <hr>    
+                <div>
+                    <h1>Skills</h1>
+                </div>
+
+                <div class="skill-box">
+                    <span class="title">HTML</span>
+                    <div class="skill-bar">
+                         <span class="skill-per html">
+                             <span class="tooltip">90%</span>
+                         </span>
+                    </div>
+                </div>
+                
+                <div class="skill-box">
+                    <span class="title">CSS</span>            
+                    <div class="skill-bar">
+                        <span class="skill-per css">
+                            <span class="tooltip">89%</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <span class="title">JavaScript</span>
+                    <div class="skill-bar">
+                       <span class="skill-per javascript">
+                            <span class="tooltip">30%</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <span class="title">BootStrap</span>
+                    <div class="skill-bar">
+                        <span class="skill-per Bootstrap">
+                              <span class="tooltip">79%</span>
+                         </span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <span class="title">Java</span>
+                    <div class="skill-bar">
+                        <span class="skill-per java">
+                            <span class="tooltip">42%</span>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="skill-box">
+                    <span class="title">PHP / MySQL</span>
+                    <div class="skill-bar">
+                        <span class="skill-per php">
+                            <span class="tooltip">68%</span>
+                        </span>
+                    </div>
+                </div>
+            </div>
+         </section>
+                    <!-- Last Section Contact me-->
+         <section class="contact-me" id="contact-me">
+            <form id="contact" method="post">
+                <hr>
+                <h3>Contact Me</h3>
+                <h4>Contact me for any Question</h4>
+                    <!-- Input Fields-->
+                <fieldset>
+                    <input placeholder="Your name" type="text" tabindex="1" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Email Address" type="email" tabindex="2" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Phone Number (optional)" type="tel" tabindex="3" required>
+                </fieldset>
+                <fieldset>
+                    <input placeholder="Your Web Site (optional)" type="url" tabindex="4" required>
+                </fieldset>
+                <fieldset>
+                    <textarea placeholder="Type your message here...." tabindex="5" required></textarea>
+                </fieldset>
+                     <!-- contact me -- Social Media-->
+                <fieldset class="social" id="social">
+                    <a class="insta" title="Instagram/eduard_sadriu" href="https://www.instagram.com/eduard_sadriu/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a class="fb" title="Facebook" href="https://www.facebook.com/profile.php?id=100010355627902" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="linkedin" title="LinkeDin" href="https://www.linkedin.com/in/eduard-sadriu-202713244/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a class="git" title="GitHub" href="https://github.com/eduardsadriu" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a class="email" title="Gmail" href="mailto:eduardsadriu6@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                </fieldset>
+                        <!-- Contact me -- Phone call Number-->
+                <fieldset class="social">
+                    <a class="phone" title="046 56 00 56" href="tel:+38346560056" target="_blank"><i class="fa-solid fa-phone"></i>Call me: 046 56 00 56</a>
+                </fieldset>
+                        <!-- Contact me -- Submit Button-->
+                <fieldset>
+                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+    </div>
+                <!-- JavaScript connect-->
+    <script src="Js/main.js"></script>
+</body>
+</html>
