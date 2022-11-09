@@ -137,6 +137,7 @@
   .education{
     align-items: center;
     display: flex;
+    
   }
         /* education section div*/
   .container .education .column-2a {
@@ -162,6 +163,7 @@
   .container .education .column-2a table{
     display: flex;
     align-items: center;
+    
   }
         /* education table style tr*/
   .container .education .column-2a table tr{
@@ -171,9 +173,13 @@
   .container .education .column-2a table tr td{
     margin: 0 2px 0 2px;
     padding: 5px 0 5px 0;
-    font-size: 22px;
-    width: 790px;
+    font-size: 19px;
+    width: 685px;
    }     
+   .container .education .column-2a table tr td .img-ubt img{
+        width: 90px;
+        height: 80px;
+   }
         /* Start Skill section, first Div*/
   .prog{
     position: relative;
